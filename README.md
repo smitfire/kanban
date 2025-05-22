@@ -13,12 +13,13 @@ A modern, interactive Kanban board application inspired by Jira and Trello, desi
 - Messaging integration (WhatsApp via Twilio, future MCP)
 - Real-time updates and notifications
 - Type-safe, scalable, and modern stack
+- **Tailwind CSS** and **daisyUI** for rapid, beautiful UI development
 
 ## Tech Stack
 
 | Layer         | Technology/Service         | Rationale                                                                 |
 |--------------|---------------------------|--------------------------------------------------------------------------|
-| Frontend     | [Fresh](https://fresh.deno.dev/) (Deno, Preact) | SSR, islands architecture, minimal JS, fast, type-safe, deploys to Deno Deploy |
+| Frontend     | [Fresh](https://fresh.deno.dev/) (Deno, Preact), [Tailwind CSS](https://tailwindcss.com/), [daisyUI](https://daisyui.com/) | SSR, islands architecture, minimal JS, fast, type-safe, rapid UI prototyping |
 | Database     | [Supabase PostgreSQL](https://supabase.com/)    | Managed relational DB, RLS, integrated auth, free tier                   |
 | ORM          | [Drizzle ORM](https://orm.drizzle.team/)        | Type-safe, zero-runtime, Deno support                                    |
 | Auth         | Supabase Auth              | Secure, social logins, JWT sessions                                      |
@@ -35,6 +36,7 @@ A modern, interactive Kanban board application inspired by Jira and Trello, desi
 - **Modular messaging** for easy future channel expansion
 - **Drizzle ORM** for schema, migrations, and type-safe DB access
 - **Deno KV** for sessions, caching, and ephemeral state
+- **Tailwind CSS + daisyUI** for rapid, consistent, and beautiful UI
 
 ## Database Schema (Drizzle ORM, PostgreSQL)
 
@@ -51,6 +53,7 @@ See [`db/schema.ts`](db/schema.ts) for the full schema. Core tables:
 - **LLM (LangChain.js/OpenAI):** Backend API calls for AI features
 - **Twilio WhatsApp:** Webhooks for incoming/outgoing messages
 - **Deno KV:** Sessions, OAuth state, caching
+- **Tailwind CSS + daisyUI:** Rapid UI development
 
 ## Development Workflow
 - TypeScript everywhere
@@ -80,6 +83,12 @@ See [`db/schema.ts`](db/schema.ts) for the full schema. Core tables:
    ```sh
    deno task db:migrate
    ```
+
+## UI Component Libraries
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **daisyUI**: Tailwind CSS plugin for beautiful, customizable component classes.
+- **Headless UI** (optional): Accessible, unstyled UI primitives for modals, dropdowns, etc.
+- **HyperUI/Flowbite** (optional): Additional Tailwind component sources for inspiration or copy-paste.
 
 ## Future Roadmap
 - Multi-channel messaging (Slack, Telegram, etc.)

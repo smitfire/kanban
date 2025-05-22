@@ -32,6 +32,7 @@
 - **Edge Data:** Deno KV
 - **Deployment:** Deno Deploy
 - **Testing/Quality:** Deno test, lint, fmt
+- **UI:** Tailwind CSS, daisyUI, (optionally Headless UI, HyperUI, Flowbite)
 - **Docs:** README.md, docs/architecture.md, .cursor/PROJECT_GUIDE.md
 
 ---
@@ -50,6 +51,7 @@
 - Use environment variables for secrets
 - Write tests for new features
 - Use code reviews for all merges
+- Use Tailwind CSS and daisyUI for rapid, consistent UI
 
 ---
 

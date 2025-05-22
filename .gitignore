@@ -1,52 +1,11 @@
-# Deno
-.DS_Store
-node_modules/
-dist/
-build/
+# dotenv environment variable files
 .env
-.env.*
+.env.development.local
+.env.test.local
+.env.production.local
 .env.local
-supabase/.temp/
-supabase/.output/
-supabase/.env
-supabase/migrations/
 
-# Deno KV (local)
-deno-kv.sqlite*
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS
-Thumbs.db
-.DS_Store
-
-# Editor
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Fresh
-fresh.gen.ts
-
-# Coverage
-coverage/
-
-# Misc
-*.bak
-*.tmp
-
-# Ignore test output
-/test-output/
-
-# Ignore Drizzle ORM artifacts
-.drizzle/
-
-# Ignore generated types
-*.d.ts
-
-db/schema.ts.bak
+# Fresh build directory
+_fresh/
+# npm dependencies
+node_modules/
